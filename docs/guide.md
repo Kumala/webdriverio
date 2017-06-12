@@ -26,6 +26,12 @@ Then let's download the latest [selenium standalone server](http://docs.selenium
 ```sh
 $ curl -O http://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.4.0.jar
 ```
+```using npm the selenium standalone server is easy as it installs all the drivers automatically rather manually downloading and running 
+``steps 2,3,4 are covered below
+$ npm install selenium-standalone@latest -g
+$ selenium-standalone install
+$ selenium-standalone start
+
 
 ** 3. Download the latest version geckodriver for your environment and unpack it in your project directory**
 
@@ -98,7 +104,7 @@ Yay, Congratulations! You've just run your first automation script with Webdrive
 This was just a warm up. Let's move forward and run WebdriverIO with the test runner. If you want to use WebdriverIO in your project for integration testing we recommend to use the test runner because it comes with a lot of useful features that makes your life easier. The first step is to create a config file. To do that just run the configuration utility:
 
 ```sh
-$ ./node_modules/.bin/wdio config
+$ "./node_modules/.bin/wdio" config
 ```
 
 A question interface pops up. It will help to create the config easy and fast. If you are not sure what to answer follow this answers:
